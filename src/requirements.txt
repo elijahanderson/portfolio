@@ -1,0 +1,12 @@
+apiclient
+email_validator
+flask
+flask-wtf
+google-api-python-client
+google-auth
+google_auth_oauthlib
+httplib2
+oauth2
+uWSGI
+werkzeug
+wtforms

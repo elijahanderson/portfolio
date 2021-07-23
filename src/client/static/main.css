@@ -1,0 +1,201 @@
+/*
+    GENERAL PAGE SPECIFICATIONS
+*/
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #f9f8d9;
+  margin-top: 5rem;
+  height: 100%;
+  font-family: 'Trebuchet MS';
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  color: #25383C;
+}
+
+h1 {
+ overflow: hidden;
+ text-align: center;
+ font-weight: 100;
+}
+h1:before, h1:after {
+  background-color: #C53C1A;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  vertical-align: middle;
+  width: 15%;
+  position: relative;
+}
+h1:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+h1:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+#wrapper {
+  min-height: 100%;
+  position: relative;
+}
+
+.container {
+  height: 100%;
+  min-height: 100%;
+  text-align: center;
+}
+
+.main-content {
+  height: 100%;
+  min-height: 100%;
+  text-align: center;
+  margin-top: 8em;
+  margin-bottom: 8em;
+}
+
+.main-content div.tri-row {
+  column-count: 3;
+  column-gap: 5em;
+}
+
+.main-content div.tri-col {
+
+}
+
+.main-content div.row {
+  column-count: 2;
+  column-gap: 5em;
+  margin-left: 5em;
+}
+
+.main-content div.column {
+  background: #FEFDEF;
+  padding: 2em;
+  border: 1px solid rgba(0,0,0,0.26);
+}
+
+.main-content hr.underline {
+  width: 5em;
+  border-top: 2px solid #d9531e;
+
+}
+
+.main-content .main-img {
+  border: 16px solid #FEFDEF;
+  box-shadow: -2px 1px 9px 2px rgba(0,0,0,0.26);
+}
+
+.main-content .contact-body {
+  border: 1px solid rgba(0,0,0,0.26);
+  background: #FEFDEF;
+  padding: 4em;
+}
+
+.main-content .contact-form {
+  text-align: left;
+  float: left;
+  font-size: 20px;
+  width: 100%;
+}
+.main-content .contact-form-field {
+  width: 100%;
+}
+.main-content .contact-form-dropdown {
+  font-size: 16px;
+}
+.main-content .contact-form-submit {
+  font-family: 'Ubuntu', sans-serif;
+  width: 170px;
+  height: 40px;
+  line-height: 1;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border: 3px solid #333745;
+  background: #fefdef;
+  color: #333745;
+  border-radius: 40px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: color .5s;
+}
+.main-content .contact-form-submit:hover {
+  background: #fe5f55;
+  color: #fefdef;
+}
+.main-content .contact-footer {
+  margin-top: 4em;
+  text-align: left;
+  font-family: 'Century Gothic';
+}
+
+
+/* SIDEBAR */
+
+.sidebar {
+  display: none;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 30%;
+  color: #463e3f;
+  background-color: #FEFDEF;
+  overflow: hidden;
+  position: fixed;
+  box-shadow: -2px 1px 9px 2px rgba(0,0,0,0.26);
+}
+
+.sidebar a {
+  display: block;
+  color: #463E3F;
+  text-align: center;
+  padding-top: 1.2em;
+  padding-left: 1.25em;
+  font-size: 17px;
+  text-decoration: none;
+  -webkit-transition: color .5s;
+  transition: color .5s;
+}
+.sidebar a:hover {
+  color: #C53C1A;
+}
+.sidebar a.active {
+  text-decoration: underline;
+  color: #C53C1A;
+}
+
+/* only show on small screens */
+@media screen and (max-width: 1200px) {
+  #wrapper {
+    width: 200%;
+  }
+  .sidebar {
+    display: block;
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #wrapper {
+    width: 300%;
+  }
+  .sidebar {
+    display: block;
+    width: 10%;
+  }
+}
+
+/*
+    MISC.
+*/
+
+/* load CSS before displaying HTML */
+#loadOverlay {
+  display: none;
+}

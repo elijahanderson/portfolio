@@ -7,37 +7,19 @@ html {
 }
 
 body {
-  background-color: #f9f8d9;
+  background-color: #aaadc4;
   margin-top: 5rem;
   height: 100%;
-  font-family: 'Trebuchet MS';
+  font-family: 'Didot';
 }
 
 h1, h2, h3, h4, h5, h6, p {
-  color: #25383C;
+  color: #27233d;
 }
 
 h1 {
- overflow: hidden;
  text-align: center;
  font-weight: 100;
-}
-h1:before, h1:after {
-  background-color: #C53C1A;
-  content: "";
-  display: inline-block;
-  height: 2px;
-  vertical-align: middle;
-  width: 15%;
-  position: relative;
-}
-h1:before {
-  right: 0.5em;
-  margin-left: -50%;
-}
-h1:after {
-  left: 0.5em;
-  margin-right: -50%;
 }
 
 #wrapper {
@@ -93,7 +75,7 @@ h1:after {
 
 .main-content .contact-body {
   border: 1px solid rgba(0,0,0,0.26);
-  background: #FEFDEF;
+  background: #aaadc4;
   padding: 4em;
 }
 
@@ -139,35 +121,35 @@ h1:after {
 /* SIDEBAR */
 
 .sidebar {
-  display: none;
   top: 0;
-  right: 0;
+  bottom: 0;
+  left: 0;
   height: 100%;
   width: 30%;
-  color: #463e3f;
-  background-color: #FEFDEF;
+  padding: 5em;
+  background-color: #27233D;
   overflow: hidden;
-  position: fixed;
+  position: absolute;
   box-shadow: -2px 1px 9px 2px rgba(0,0,0,0.26);
 }
 
 .sidebar a {
   display: block;
-  color: #463E3F;
+  color: #e3e9e8;
   text-align: center;
-  padding-top: 1.2em;
-  padding-left: 1.25em;
   font-size: 17px;
   text-decoration: none;
-  -webkit-transition: color .5s;
-  transition: color .5s;
 }
+
 .sidebar a:hover {
-  color: #C53C1A;
+  margin-left: 2em;
+  transition-property: margin-left;
+  transition-duration: 0.25s;
+  transition-timing-function: linear;
+  transition-delay: 0s;
 }
 .sidebar a.active {
-  text-decoration: underline;
-  color: #C53C1A;
+  color: #fdff79;
 }
 
 /* only show on small screens */

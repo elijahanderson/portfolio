@@ -8,7 +8,6 @@ html {
 
 body {
   background-color: #aaadc4;
-  margin-top: 5rem;
   height: 100%;
   font-family: 'Didot';
 }
@@ -35,37 +34,10 @@ h1 {
 
 .main-content {
   height: 100%;
+  margin-left: 40%;
+  right: 0;
   min-height: 100%;
   text-align: center;
-  margin-top: 8em;
-  margin-bottom: 8em;
-}
-
-.main-content div.tri-row {
-  column-count: 3;
-  column-gap: 5em;
-}
-
-.main-content div.tri-col {
-
-}
-
-.main-content div.row {
-  column-count: 2;
-  column-gap: 5em;
-  margin-left: 5em;
-}
-
-.main-content div.column {
-  background: #FEFDEF;
-  padding: 2em;
-  border: 1px solid rgba(0,0,0,0.26);
-}
-
-.main-content hr.underline {
-  width: 5em;
-  border-top: 2px solid #d9531e;
-
 }
 
 .main-content .main-img {
@@ -126,9 +98,9 @@ h1 {
   left: 0;
   height: 100%;
   width: 30%;
-  padding: 5em;
+  /*margin-top: -8em;
+  padding: 5em;*/
   background-color: #27233D;
-  overflow: hidden;
   position: absolute;
   box-shadow: -2px 1px 9px 2px rgba(0,0,0,0.26);
 }
@@ -137,7 +109,8 @@ h1 {
   display: block;
   color: #e3e9e8;
   text-align: center;
-  font-size: 17px;
+  font-size: 20px;
+  padding: 2em;
   text-decoration: none;
 }
 
@@ -158,8 +131,10 @@ h1 {
     width: 200%;
   }
   .sidebar {
-    display: block;
-    width: 20%;
+    width: 25%;
+  }
+  .main-content {
+    margin-left: 25%;
   }
 }
 
@@ -169,7 +144,10 @@ h1 {
   }
   .sidebar {
     display: block;
-    width: 10%;
+    width: 20%;
+  }
+  .main-content {
+    margin-left: 20%;
   }
 }
 

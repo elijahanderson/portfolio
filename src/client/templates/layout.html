@@ -16,23 +16,16 @@
     {% endif %}
 </head>
 <body>
-    <div id="wrapper">
-    <div class="container">
-
-	<div class="sidebar">
+    <div class="sidebar">
             <a href="/about">About</a>
             <a href="/work">Work</a>
 	        <a href="/blog">Blog</a>
             <a href="/contact">Contact</a>
-	</div>
+    </div>
 
     <div class="main-content">
         {% block content %}{% endblock %}
     </div>
-
-    </div>
-    </div>
-
     <script>
 	    window.onload = function () {
 		for (var i = 0; i < document.links.length; i++) {

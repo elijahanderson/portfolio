@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="main-header">
+	    <h1>Let's get in touch.</h1>
+	    <br>
+	    <h5>Fill out the form to send me an email.</h5>
+	    <div class="contact-body">
+            {% if error_msg %}
+            <div style="color:rgb(255,0,0)"><strong>{{ error_msg }}</strong></div>
+            {% endif %}
+	    <div class="row">
+	    	<form class="col s12" method=POST action="{{ url_for('contact.contact') }}">
+		    <div class="row">
+		        <div class="input-field col s6">
+				<input type="text" id="contact-name" name="contact-name" class="validate">
+				<label class="active" for="contact-name">Name</label>
+		  	</div>
+		  	<div class="input-field col s6">
+				<input type="email" id="contact-email" name="contact-email" class="validate">
+				<label class="active" for="contact-email">Email</label>
+		  	</div>
+		    </div>
+		    <div class="row">
+			<div class="col s12">
+				<textarea id="contact-body" name="contact-body" class="materialize-textarea"></textarea>
+				<label for="contact-body">Body</label>
+			</div>
+		    </div>
+		    <br><br>
+		    <input type="submit" value="Submit" class="contact-form-submit">
+		</form>
+	    </div>
+	    {% if success %}
+ 	        <p>Thanks for your interest! I will get in touch with you as soon as I can.</p>
+	    {% endif %}
+	    </div>
+    </div>
+{% endblock content %}

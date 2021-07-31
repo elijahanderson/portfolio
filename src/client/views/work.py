@@ -5,5 +5,5 @@ work_bp = Blueprint('work', __name__, template_folder='templates')
 
 @work_bp.route('/work')
 def work():
-    """ REST endpoint for the home page. """
+    """ REST endpoint for the work page. """
     return render_template('work.html', title='Work')

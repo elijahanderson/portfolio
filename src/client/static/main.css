@@ -44,7 +44,7 @@ a:hover {
 
 .main-content {
   height: 100%;
-  margin-top: 5em;
+  margin-top: 2em;
   margin-left: 30%;
   margin-right: 10%;
   right: 0;
@@ -55,6 +55,7 @@ a:hover {
 /* CONTACT PAGE */
 .main-content .contact-body {
   width: 80%;
+  margin-top: 2em;
   margin-left: 10%;
   margin-right: 10%;
   /*border: 1px solid rgba(0,0,0,0.26);*/
@@ -93,6 +94,23 @@ a:hover {
   color: #27233d;
 }
 
+.blog-col {
+  float: left;
+}
+.blog-img {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 2em;
+  position: relative;
+  border: 2px solid #e3e9e8;
+  box-shadow: -2px 1px 9px 2px rgba(0,0,0,0.26);
+}
+.blog-card {
+  background-color: #e3e9e8;
+  padding: 20px;
+  margin-top: 20px;
+}
+
 /* WORK PAGE */
 .timeline {
     list-style: none;
@@ -100,7 +118,7 @@ a:hover {
     margin-left: -60%;
     position: relative;
     font-size: 18px;
-    z-index: -1;
+    z-index: 0;
 }
 
   /* ----- vertical timeline ----*/
@@ -252,6 +270,7 @@ br{
   width: 20%;
   background-color: #27233D;
   position: absolute;
+  z-index: 1;
   /*background-image: linear-gradient(#27233D 60%, #aaadc4);*/
 }
 .sidebar .sidebar-img {
@@ -285,19 +304,7 @@ br{
   margin-left: 0;
 }
 
-/* only show on small screens */
-@media screen and (max-width: 1200px) {
-  #wrapper {
-    width: 200%;
-  }
-  .sidebar {
-    width: 25%;
-  }
-  .main-content {
-    margin-left: 25%;
-  }
-}
-
+/* screen sizing */
 @media screen and (max-width: 700px) {
   #wrapper {
     width: 300%;
@@ -305,6 +312,9 @@ br{
   .sidebar {
     display: block;
     width: 20%;
+  }
+  .back-home {
+    margin-left: 25%;
   }
   .main-content {
     margin-left: 20%;
@@ -344,6 +354,20 @@ br{
         }
 }
 
+@media screen and (max-width: 1280px) {
+  #wrapper {
+    width: 200%;
+  }
+  .sidebar {
+    width: 25%;
+  }
+  .main-content {
+    margin-left: 25%;
+  }
+  .back-home {
+    margin-left: 25%;
+  }
+}
 /*
     MISC.
 */

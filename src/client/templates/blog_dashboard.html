@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1>Blog</h1>
+<div class="pagination">
+            {% if page_no > 1 %}
+	    <a href="{{ '/blog/%(page_no)s' % {'page_no': page_no-1} }}">&laquo;</a>
+            {% else %}
+                <a>&laquo;</a>
+            {% endif %}
+            {% for pg in blog_pgs %}
+                {% if pg == page_no %}
+                    <a class="active" href="{{ '/blog/%(page_no)s' % {'page_no': pg} }}">{{ pg }}</a>
+                {% else %}
+                    <a href="{{ '/blog/%(page_no)s' % {'page_no': pg} }}">{{ pg }}</a>
+                {% endif %}
+            {% endfor %}
+            {% if page_no < blogs|length %}
+                <a href="{{ '/blog/%(page_no)s' % {'page_no': page_no+1} }}">&raquo;</a>
+            {% else %}
+                <a>&raquo;</a>
+            {% endif %}
+</div>
+<div>
+	{% for blog in blogs %}
+	  <div class="blog-col">
+	    <div class="blog-card">
+		    <h2>{{ blog.name }}</h2>
+		    <h5>{{ blog.blog_date }}</h5>
+		    <div style="height:200px;">Image</div>
+	      	    <p>{{ blog.description }}</p>
+	    </div>
+	  </div>
+	{% endfor %}
+</div>
+	{% endblock content %}
